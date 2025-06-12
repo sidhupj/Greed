@@ -1,7 +1,10 @@
 [package]
 name = "greed"
-version = "0.1.0"
-edition = "2024"
+version.workspace = true
+authors.workspace = true
+license.workspace = true
+edition.workspace = true
+repository.workspace = true
 
 [dependencies]
-libloading = "0.8.8"
+engine = { path = "../engine", version = "0.1.0" }

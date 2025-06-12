@@ -1,3 +1,16 @@
 [workspace]
 resolver = "3"
-members = [ "engine","greed"]
+members = ["engine", "greed"]
+
+[workspace.package]
+# Define the version for your entire workspace here
+version = "0.1.0"
+authors = ["Sidharth <sidharth.pj2019@gmail.com>"]
+edition = "2024"
+license = "Apache-2.0"
+repository = "https://github.com/sidhupj/Greed.git"
+
+[workspace.dependencies]
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter", "fmt", "ansi"]}
+tracing-appender = "0.2.3"

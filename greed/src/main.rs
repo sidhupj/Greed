@@ -1,11 +1,13 @@
-use crate::application::Application;
+use engine::app::App;
 
-mod application;
-
-fn main() {
-    let result = Application::new();
-    match result {
-        Err(err) => panic!("Error: {}", err),
-        Ok(mut app) => app.run_application(),
+struct GreedApp;
+impl App for GreedApp {
+    fn new() -> Self {
+        GreedApp
     }
+}
+fn main() {
+    let greed_app = Box::new(GreedApp::new());
+    greed_app.run();
+    // The application will run indefinitely until manually stopped.
 }
