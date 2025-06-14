@@ -14,3 +14,4 @@ repository = "https://github.com/sidhupj/Greed.git"
 tracing = "0.1.41"
 tracing-subscriber = { version = "0.3.19", features = ["env-filter", "fmt", "ansi"]}
 tracing-appender = "0.2.3"
+bitflags = "2.9.1"
